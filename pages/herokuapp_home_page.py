@@ -10,6 +10,7 @@ class HomePage(BasePage):
         ADD_REMOVE_BUTTON = By.XPATH, "//a[text()='Add/Remove Elements']"
         FORM_AUTHENTICATION = By.XPATH, "//a[text()='Form Authentication']"
         DROPDOWN = By.XPATH, "//a[text()='Dropdown']"
+        JS_ALERTS = By.XPATH, "//a[text()='JavaScript Alerts']"
 
     def click_ab_testing(self) -> None:
         self.get_element(self.Locators.AB_TESTING_BUTTON).click()
@@ -22,4 +23,7 @@ class HomePage(BasePage):
 
     def click_dropdown(self) -> None:
         self.get_element(self.Locators.DROPDOWN).click()
+
+    def click_js_alerts(self) -> None:
+        self.get_element(self.Locators.JS_ALERTS).click()
 

@@ -36,3 +36,16 @@ Feature: Testing herokuapp
     Then the user is redirected to the "Dropdown"
     And Page title is Dropdown
     And User clicks at Dropdown list
+
+  @scenario.5
+  Scenario: JavaScript alerts
+    Given User is on the webpage
+    When User clicks JavaScript Alerts
+    Then the user is redirected to the "JavaScriptAlerts"
+    And Page title is JavaScript Alerts
+    And User clicks JS Alert
+    And User accepts popup
+    And User clicks JS Confirm
+    And User accept JS Confirm
+    And User clicks JS Confirm
+    And User dismiss JS Confirm

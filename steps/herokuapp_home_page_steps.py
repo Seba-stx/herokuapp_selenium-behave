@@ -19,3 +19,8 @@ def step_impl(context):
 @step("User clicks Dropdown")
 def step_impl(context):
     context.page.click_dropdown()
+
+
+@step("User clicks JavaScript Alerts")
+def step_impl(context):
+    context.page.click_js_alerts()
