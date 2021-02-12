@@ -27,3 +27,6 @@ class BasePage:
     def select_from_dropdown_by_value(self, locator, value, wait_seconds=3):
         select = Select(WebDriverWait(self.driver, wait_seconds).until(EC.presence_of_element_located(locator)))
         select.select_by_value(value)
+
+    def force_click(self, locator):
+        self.driver.execute_script("arguments[0].click();", locator)

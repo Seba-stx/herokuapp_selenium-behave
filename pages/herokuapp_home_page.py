@@ -13,17 +13,18 @@ class HomePage(BasePage):
         JS_ALERTS = By.XPATH, "//a[text()='JavaScript Alerts']"
 
     def click_ab_testing(self) -> None:
-        self.get_element(self.Locators.AB_TESTING_BUTTON).click()
+        self.click(self.Locators.AB_TESTING_BUTTON)
 
     def click_add_remove_element(self) -> None:
-        self.get_element(self.Locators.ADD_REMOVE_BUTTON).click()
+        self.click(self.Locators.ADD_REMOVE_BUTTON)
 
     def click_form_authentication(self) -> None:
-        self.get_element(self.Locators.FORM_AUTHENTICATION).click()
+        self.click(self.Locators.FORM_AUTHENTICATION)
 
     def click_dropdown(self) -> None:
-        self.get_element(self.Locators.DROPDOWN).click()
+        self.click(self.Locators.DROPDOWN)
 
     def click_js_alerts(self) -> None:
-        self.get_element(self.Locators.JS_ALERTS).click()
+        self.force_click(self.get_element(self.Locators.JS_ALERTS))
+
 
