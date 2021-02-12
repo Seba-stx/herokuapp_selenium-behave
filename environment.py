@@ -13,9 +13,7 @@ The same happens with context.driver
 The arrow at the end of the function determines type, it's called type annotation.
 Thanks to this PyCharm gives us a hint what type is expected
 '''
-'''
-Obczaic temat zwiazany z Context, co to za typ runner.Context
-'''
+
 
 
 def before_all(context: runner.Context) -> None:
