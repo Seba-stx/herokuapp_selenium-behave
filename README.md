@@ -3,11 +3,11 @@ This is a private project, I'm developing automation tests which can be run on p
 Run command:
 For all tests:
 
-behave -D driver=chrome -D base_url=http://localhost:3001/bp/login
+behave -D driver=chrome -D base_url=http://the-internet.herokuapp.com/
 
 For single feature file:
 
-behave features/application_form.feature -D driver=chrome -D base_url=http://localhost:3001/bp/login
+behave features/application_form.feature -D driver=chrome -D base_url=http://the-internet.herokuapp.com/
 
 For single tag add:
 
