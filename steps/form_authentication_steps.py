@@ -1,4 +1,5 @@
-from behave import step
+from behave import step, runner
+from value_assertion import compare_expected_value_with_displayed
 
 
 @step("Page title is Login Page")
@@ -17,7 +18,8 @@ def step_impl(context):
 
 
 @step("Successful log in message pop up")
-def step_impl(context):
+def step_impl(context: runner.Context) -> None:
+    context.page_error_list = []
     displayed_log_in_message = context.page.get_log_in_message()
     expected_log_in_message = "You logged into a secure area!"
     assert displayed_log_in_message == expected_log_in_message, \

@@ -2,6 +2,8 @@ from selenium import webdriver
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.select import Select
 from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.common.keys import Keys
 
 
 class BasePage:
@@ -30,3 +32,9 @@ class BasePage:
 
     def force_click(self, locator):
         self.driver.execute_script("arguments[0].click();", locator)
+
+    def move_slider_to_right(self, locator, wait_seconds=3):
+        WebDriverWait(self.driver, wait_seconds).until(EC.presence_of_element_located(locator)).send_keys(Keys.RIGHT)
+
+    def move_slider_to_left(self, locator, wait_seconds=3):
+        WebDriverWait(self.driver, wait_seconds).until(EC.presence_of_element_located(locator)).send_keys(Keys.LEFT)

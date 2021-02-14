@@ -24,3 +24,8 @@ def step_impl(context):
 @step("User clicks JavaScript Alerts")
 def step_impl(context):
     context.page.click_js_alerts()
+
+
+@step("User clicks Horizontal slider")
+def step_impl(context):
+    context.page.click_horizontal_slider()

@@ -15,7 +15,6 @@ Thanks to this PyCharm gives us a hint what type is expected
 '''
 
 
-
 def before_all(context: runner.Context) -> None:
     context.base_url = behave.use_fixture(configuration.base_url, context)
 

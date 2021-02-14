@@ -5,6 +5,7 @@ from pages.herokuapp_home_page import HomePage
 from pages.form_authentication_page import FormAuthentication
 from pages.dropdown_page import Dropdown
 from pages.javascript_alerts_page import JavaScriptAlerts
+from pages.horizontal_slider_page import HorizontalSlider
 
 '''
 'driver: webdriver.Remote' --> giving type of 'driver', it's called 'typowanie'

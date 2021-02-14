@@ -1,5 +1,4 @@
 from selenium.webdriver.common.by import By
-
 from pages.base import BasePage
 
 
@@ -11,6 +10,7 @@ class HomePage(BasePage):
         FORM_AUTHENTICATION = By.XPATH, "//a[text()='Form Authentication']"
         DROPDOWN = By.XPATH, "//a[text()='Dropdown']"
         JS_ALERTS = By.XPATH, "//a[text()='JavaScript Alerts']"
+        HORIZONTAL_SLIDER = By.XPATH, "//a[text()='Horizontal Slider']"
 
     def click_ab_testing(self) -> None:
         self.click(self.Locators.AB_TESTING_BUTTON)
@@ -26,5 +26,9 @@ class HomePage(BasePage):
 
     def click_js_alerts(self) -> None:
         self.force_click(self.get_element(self.Locators.JS_ALERTS))
+
+    def click_horizontal_slider(self) -> None:
+        self.click(self.Locators.HORIZONTAL_SLIDER)
+
 
 

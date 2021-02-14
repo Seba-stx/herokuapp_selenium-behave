@@ -32,7 +32,3 @@ def _get_argument_value(context: runner.Context, key: str, required: bool = Fals
     # if not required or required and argument_value is not None:
     return argument_value
 
-'''
-Obczaić temat exception
-'''
-    # raise exceptions.MissingCommandLineArgument(key)

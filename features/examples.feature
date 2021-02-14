@@ -49,3 +49,11 @@ Feature: Testing herokuapp
     And User accept JS Confirm
     And User clicks JS Confirm
     And User dismiss JS Confirm
+
+  @scenario.6
+  Scenario: Horizontal slider
+    Given User is on the webpage
+    When User clicks Horizontal slider
+    Then the user is redirected to the "HorizontalSlider"
+    And User moves Horizontal slider to the end
+    And User moves Horizontal slider to the beginning
